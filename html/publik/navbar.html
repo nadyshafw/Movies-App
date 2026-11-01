@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Navbar</title>
+</head>
+<body>
+    <div>
+        <nav id="navbar" class="flex justify-between bg-black p-4">
+            <div class="flex items-center gap-6">
+                <h1 class="text-pink-500 font-bold text-2xl">NONTON</h1>
+                <p class="text-sm font-bold text-gray-400">HOME</p>
+            </div>
+
+            <div>
+                <form 
+                    class="flex sm:flex-row gap-2">
+                    <div class="flex-1">
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder="Search movie by title"
+                        class="w-full text-white border border-gray-300 shadow px-7 py-1 font-sm focus:outline-none focus:ring-0 focus:border-white"
+                    />
+                    </div>
+                    <button
+                        type="submit"
+                        class="bg-pink-500 px-3 text-white font-bold hover:text-gray-500"
+                        >
+                        ⌕
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
